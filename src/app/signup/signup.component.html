@@ -1,0 +1,51 @@
+
+    
+    <br>
+    <br>
+    <form [formGroup]='registration' >
+    <div class="row justify-content-center" >
+    <div class="card w-50 justify-content-center ">
+      <div class="card-body ">
+          <div class="container bg-#eee" >
+              <div class="row justify-content-center">
+            
+                <h5 class="card-title">Sign in here </h5>
+                <hr>
+                <div class="Form-Group">
+                    <label class="Form-label">Email</label>
+                    <input type="email" style="background-color: #eee;"class="form-control" formControlName="email" name="email"
+                        placeholder="enter email"><br>
+                        <span class="text-danger" *ngIf="!registration.get('email')?.valid && registration.get('email')?.touched">Enter valid Email</span>
+
+                </div>
+                <div class="Form-Group">
+                    <label class="Form-label">Password</label>
+                    <input type="password" style="background-color: #eee;" class="form-control" formControlName="pwd" placeholde="pwd" name="pwd"><br>
+                </div><br><br>
+                 
+                 <!-- <button type="submit" (click)="PostAll()">Sign in</button> -->
+                 <button type="submit"(click)="PostAll()" class="btn btn-primary btn-block w-50">sign in</button>
+ 
+              </div>
+              <div class="col mb-50"> 
+                <!-- Simple link -->
+                <!-- <a [routerLink] ="['/unlock Account']">unlock-account</a> -->
+ 
+                <a [routerLink]="['/forgetpassw/'] ">Forgot password?</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                <a href="#!">Sign-Up</a>
+
+                
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+
+

@@ -1,0 +1,42 @@
+<br><br>
+<div class="row justify-content-center" >
+    <div class="card w-50 justify-content-center ">
+      <div class="card-body ">
+          <div class="container bg-#eee" >
+              <div class="row justify-content-center">
+            
+
+                <form [formGroup]="unlock">
+                <h5 class="card-title">unlock-account </h5>
+                <hr>
+                <div class="Form-Group">
+                    <label class="Form-label">Email:</label>
+                    <input type="email" style="background-color: #eee;"class="form-control" formControlName="email"
+                        placeholder="enter email"><br>
+                        <span class="text-danger" *ngIf="!unlock.get('email')?.valid && unlock.get('email')?.touched">Enter valid Email</span>
+                 
+                </div>
+                <div class="Form-Group">
+                    <label class="Form-label"> Temporary Password:</label>
+                    <input type="password" style="background-color: #eee;" class="form-control" formControlName="tempPwd" placeholde="passward"><br>
+                    
+                </div>
+
+                <div class="Form-Group">
+                    <label class="Form-label"> Choose New Password:</label>
+                    <input type="password" style="background-color: #eee;" class="form-control" formControlName="newPwd" placeholde="passward"><br>
+                </div>
+
+                <div class="Form-Group">
+                    <label class="Form-label"> Conform Password:</label>
+                    <input type="password" style="background-color: #eee;" class="form-control" formControlName="confirmPwd" placeholde="passward"><br>
+                </div>
+                 <button type="submit" class="btn btn-primary btn-block w-50" (click)="SaweUser()">Submit</button> 
+                
+                </form>
+              </div>
+              
+            </div>
+        </div>
+    </div>
+</div>

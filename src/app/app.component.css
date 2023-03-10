@@ -1,0 +1,26 @@
+h1{
+    color:white;
+}
+
+
+.a{display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: Navy;
+    float: right;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-top: 20px;
+    color:white;
+
+}
+a{
+    color: white;
+
+}
+
+
+.pra{
+    margin-left:-20%;
+}
+
